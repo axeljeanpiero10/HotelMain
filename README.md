@@ -71,41 +71,39 @@ Se emplea el patrón MVC y DAO:
 
 ### 1. Clonar el repositorio
 
-```bash
 git clone https://github.com/axeljeanpiero10/HotelMain.git
 cd HotelMain
-```
+
 
 ### 2. Configurar la base de datos
 
 1. Crear la base de datos:
-   ```sql
+ 
    CREATE DATABASE hotelmain;
-   ```
+
 2. Importar el dump SQL (ubicado en `dist/javadoc` o en la carpeta `sql` si está disponible):
-   ```bash
+  
    mysql -u tu_usuario -p hotelmain < ruta/a/dump.sql
-   ```
 
 ### 3. Ajustar parámetros de conexión
 
 Editar el archivo `src/com/Util/Conexion.java` (o el que gestione JDBC) y definir:
 
-```java
+
 String url      = "jdbc:mysql://localhost:3306/hotelmain";
 String user     = "tu_usuario";
 String password = "tu_contraseña";
-```
+
 
 ### 4. Compilar y empaquetar
 
 Ejecutar Ant para compilar y generar el WAR:
 
-```bash
+
 ant clean
 ant compile
 ant war
-```
+
 
 El artefacto `HotelMain.war` se generará en `dist/`.
 
@@ -129,7 +127,7 @@ El artefacto `HotelMain.war` se generará en `dist/`.
 
 ## Estructura de carpetas
 
-```
+
 HotelMain/
 ├─ build/              # Clases compiladas
 ├─ dist/               # WAR generado y documentación Javadoc
@@ -143,24 +141,23 @@ HotelMain/
 │  ├─ jsp/
 │  └─ assets/
 └─ build.xml           # Script de compilación Ant
-```
 
----
+
+
 
 ## Contribuir
 
 1. Haz un fork del repositorio.  
 2. Crea una rama feature/tu-nombre:  
-   ```bash
+
    git checkout -b feature/nueva-funcionalidad
-   ```  
+
 3. Realiza tus cambios y commitea:  
-   ```bash
+
    git commit -m "Añade descripción de tu cambio"
-   ```  
+ 
 4. Sube tu rama y abre un Pull Request.  
 
----
 
 ## Autor
 
