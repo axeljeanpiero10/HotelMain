@@ -10,17 +10,7 @@ Una aplicación web para la gestión integral de un hotel. Permite controlar usu
 - [Tecnologías](#tecnologías)  
 - [Arquitectura](#arquitectura)  
 - [Requisitos previos](#requisitos-previos)  
-- [Instalación y configuración](#instalación-y-configuración)  
-  - [1. Clonar el repositorio](#1-clonar-el-repositorio)  
-  - [2. Configurar la base de datos](#2-configurar-la-base-de-datos)  
-  - [3. Ajustar parámetros de conexión](#3-ajustar-parámetros-de-conexión)  
-  - [4. Compilar y empaquetar](#4-compilar-y-empaquetar)  
-  - [5. Desplegar en Tomcat](#5-desplegar-en-tomcat)  
-- [Uso](#uso)  
-- [Estructura de carpetas](#estructura-de-carpetas)  
-- [Contribuir](#contribuir)  
-- [Autor](#autor)  
-- [Licencia](#licencia)  
+
 
 ---
 
